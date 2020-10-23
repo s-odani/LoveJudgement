@@ -216,8 +216,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="相手との関係" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ldJ-Su-HuR">
-                                <rect key="frame" x="57" y="374" width="300" height="38"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="相手との関係" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ldJ-Su-HuR">
+                                <rect key="frame" x="117" y="374" width="180" height="38"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done"/>
                             </textField>
@@ -260,8 +260,8 @@
                                 <rect key="frame" x="177" y="186" width="217" height="80"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             </pickerView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kPt-Sa-Gnu">
-                                <rect key="frame" x="157" y="692" width="100" height="77"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kPt-Sa-Gnu">
+                                <rect key="frame" x="176.5" y="706.5" width="61" height="48"/>
                                 <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="投稿">
@@ -269,16 +269,18 @@
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="30"/>
+                                        <integer key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="YQg-v8-vgm" firstAttribute="top" secondItem="ldJ-Su-HuR" secondAttribute="bottom" constant="20" id="VZR-8M-hex"/>
-                            <constraint firstItem="kPt-Sa-Gnu" firstAttribute="centerX" secondItem="91x-uv-LRl" secondAttribute="centerX" id="aMG-lD-m7i"/>
+                            <constraint firstItem="kPt-Sa-Gnu" firstAttribute="centerX" secondItem="91x-uv-LRl" secondAttribute="centerX" id="4Dj-tF-hGQ"/>
+                            <constraint firstItem="ldJ-Su-HuR" firstAttribute="centerX" secondItem="91x-uv-LRl" secondAttribute="centerX" id="S7p-Jv-ZbF"/>
+                            <constraint firstItem="kPt-Sa-Gnu" firstAttribute="centerY" secondItem="91x-uv-LRl" secondAttribute="centerY" constant="282.5" id="SrA-KO-VIy"/>
                             <constraint firstItem="AYe-F2-zVn" firstAttribute="bottom" secondItem="YQg-v8-vgm" secondAttribute="bottom" constant="128.5" id="lJ5-0r-4eK"/>
+                            <constraint firstItem="ldJ-Su-HuR" firstAttribute="centerY" secondItem="91x-uv-LRl" secondAttribute="centerY" constant="-55" id="mXm-d8-Awb"/>
                             <constraint firstItem="YQg-v8-vgm" firstAttribute="centerX" secondItem="91x-uv-LRl" secondAttribute="centerX" id="qoa-8i-yNM"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="AYe-F2-zVn"/>

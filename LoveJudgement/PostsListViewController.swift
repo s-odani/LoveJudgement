@@ -22,10 +22,10 @@ class PostsListViewController: UIViewController {
     }
     
 
-    @IBAction func detail(_ sender: Any) {
+    /*@IBAction func detail(_ sender: Any) {
         let detailVC = storyboard?.instantiateViewController(withIdentifier: "detail") as! DetailViewController
         navigationController?.pushViewController(detailVC, animated: true)
-    }
+    }*/
     /*
     // MARK: - Navigation
 

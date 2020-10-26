@@ -1,0 +1,6 @@
+framework module Pods_LoveJudgement {
+  umbrella header "Pods-LoveJudgement-umbrella.h"
+
+  export *
+  module * { export * }
+}

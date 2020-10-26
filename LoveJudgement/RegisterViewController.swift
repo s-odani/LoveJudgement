@@ -7,11 +7,14 @@
 //
 
 import UIKit
-
+import Firebase
+import FirebaseAuth
 
 
 class RegisterViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource,  UITextFieldDelegate {
     
+    var age = String()
+    var gender = String()
     
     @IBOutlet weak var nameTextField: UITextField!
     
@@ -45,6 +48,38 @@ class RegisterViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
            return true
        }
     
+    @IBAction func register(_ sender: Any) {
+        
+        //匿名ログイン
+        Auth.auth().signInAnonymously { (result, error) in
+            
+            if error != nil{
+                print("errorPlace1")
+                return
+            }
+            
+            let user = result?.user
+            print(user.debugDescription)
+            //次の画面へ遷移
+            //let postsVC = self.storyboard?.instantiateViewController(withIdentifier: "posts") as! PostsListViewController
+            
+            //データをローカルに保存
+            //UserDefaults.standard.set(user, forKey: "userID")
+            UserDefaults.standard.set(self.nameTextField.text!, forKey: "userName")
+            UserDefaults.standard.set(self.age, forKey: "age")
+            UserDefaults.standard.set(self.gender, forKey: "gender")
+            print(self.gender)
+            print(self.age)
+            print(self.nameTextField.text!)
+            //print(user)
+            
+            
+            
+            //self.navigationController?.pushViewController(postsVC, animated: true)
+            
+        }
+        performSegue(withIdentifier: "posts", sender: nil)
+    }
     
     //~~~~~~~~~~~~~~~~~~~~~~年齢のpicker関係~~~~~~~~~~~~~~~~~~~~~~
     // UIPickerViewの列の数
@@ -71,7 +106,7 @@ class RegisterViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
                     didSelectRow row: Int,
                     inComponent component: Int) {
         
-        // = dataList[row]
+      age = dataList[row]
         
     }
     
@@ -79,10 +114,10 @@ class RegisterViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     //~~~~~~~~~~~~~~~~性別のセグメント関係~~~~~~~~~~~~~~~~~~^
     @IBAction func genderChanged(_ sender: Any) {
         //セグメントが変更されたときの処理
-               //選択されているセグメントのインデックス
-               //let selectedIndex = segmentedControl.selectedSegmentIndex
-               //選択されたインデックスの文字列を取得してラベルに設定
-               //label.text = segmentedControl.titleForSegmentAtIndex(selectedIndex)
+        //選択されているセグメントのインデックス
+        let selectedIndex = genderSegmentedControl.selectedSegmentIndex
+        //選択されたインデックスの文字列を取得してラベルに設定
+        gender = genderSegmentedControl.titleForSegment(at: selectedIndex)!
     }
     
     

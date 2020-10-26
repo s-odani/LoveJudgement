@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		68FD0997962C2E2F1A97E34A /* Pods_LoveJudgement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33B4ACC98CBDC1909F6BD386 /* Pods_LoveJudgement.framework */; };
+		CC39B5F02544DC5B00362C5B /* SendDBModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC39B5EF2544DC5B00362C5B /* SendDBModel.swift */; };
 		CC704A5825409C38006491F6 /* PostsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC704A5725409C38006491F6 /* PostsListViewController.swift */; };
 		CC704A5A25409EE9006491F6 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC704A5925409EE9006491F6 /* DetailViewController.swift */; };
 		CC704A5C2540A225006491F6 /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = CC704A5B2540A224006491F6 /* test.png */; };
@@ -14,6 +16,7 @@
 		CC704A602540CAD4006491F6 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC704A5F2540CAD4006491F6 /* PostViewController.swift */; };
 		CC704A632540DBF1006491F6 /* CheckPermission.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC704A622540DBF1006491F6 /* CheckPermission.swift */; };
 		CC704A692542824B006491F6 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC704A682542824B006491F6 /* ImageViewController.swift */; };
+		CC704A6B2544D30B006491F6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CC704A6A2544D30B006491F6 /* GoogleService-Info.plist */; };
 		CCBFB335253FC2D60038A32A /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBFB334253FC2D60038A32A /* RegisterViewController.swift */; };
 		CCBFB339253FC3AB0038A32A /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBFB338253FC3AB0038A32A /* LogInViewController.swift */; };
 		CCC2B3E32536AC8800F6D500 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC2B3E22536AC8800F6D500 /* AppDelegate.swift */; };
@@ -25,6 +28,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		33B4ACC98CBDC1909F6BD386 /* Pods_LoveJudgement.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoveJudgement.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC39B5EF2544DC5B00362C5B /* SendDBModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendDBModel.swift; sourceTree = "<group>"; };
 		CC704A5725409C38006491F6 /* PostsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsListViewController.swift; sourceTree = "<group>"; };
 		CC704A5925409EE9006491F6 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		CC704A5B2540A224006491F6 /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test.png; sourceTree = "<group>"; };
@@ -32,6 +37,7 @@
 		CC704A5F2540CAD4006491F6 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		CC704A622540DBF1006491F6 /* CheckPermission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckPermission.swift; sourceTree = "<group>"; };
 		CC704A682542824B006491F6 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		CC704A6A2544D30B006491F6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CCBFB334253FC2D60038A32A /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		CCBFB338253FC3AB0038A32A /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		CCC2B3DF2536AC8800F6D500 /* LoveJudgement.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoveJudgement.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,6 +48,8 @@
 		CCC2B3EB2536AC8B00F6D500 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CCC2B3EE2536AC8B00F6D500 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CCC2B3F02536AC8B00F6D500 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4E431BF2002A30B6F6E4077 /* Pods-LoveJudgement.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoveJudgement.debug.xcconfig"; path = "Target Support Files/Pods-LoveJudgement/Pods-LoveJudgement.debug.xcconfig"; sourceTree = "<group>"; };
+		D618C9DF01BD311A31C67E11 /* Pods-LoveJudgement.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoveJudgement.release.xcconfig"; path = "Target Support Files/Pods-LoveJudgement/Pods-LoveJudgement.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,12 +57,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68FD0997962C2E2F1A97E34A /* Pods_LoveJudgement.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A91773CC47257688DB2C88D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				33B4ACC98CBDC1909F6BD386 /* Pods_LoveJudgement.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		76D52DD7344ED2D7BB3DCFF2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D4E431BF2002A30B6F6E4077 /* Pods-LoveJudgement.debug.xcconfig */,
+				D618C9DF01BD311A31C67E11 /* Pods-LoveJudgement.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		CC704A612540DB97006491F6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -68,6 +94,8 @@
 			children = (
 				CCC2B3E12536AC8800F6D500 /* LoveJudgement */,
 				CCC2B3E02536AC8800F6D500 /* Products */,
+				76D52DD7344ED2D7BB3DCFF2 /* Pods */,
+				0A91773CC47257688DB2C88D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,6 +115,7 @@
 				CCC2B3E42536AC8800F6D500 /* SceneDelegate.swift */,
 				CCC2B3E62536AC8800F6D500 /* ViewController.swift */,
 				CCBFB334253FC2D60038A32A /* RegisterViewController.swift */,
+				CC39B5EF2544DC5B00362C5B /* SendDBModel.swift */,
 				CCBFB338253FC3AB0038A32A /* LogInViewController.swift */,
 				CCC2B3E82536AC8800F6D500 /* Main.storyboard */,
 				CC704A5F2540CAD4006491F6 /* PostViewController.swift */,
@@ -97,6 +126,7 @@
 				CCC2B3EB2536AC8B00F6D500 /* Assets.xcassets */,
 				CC704A5B2540A224006491F6 /* test.png */,
 				CCC2B3ED2536AC8B00F6D500 /* LaunchScreen.storyboard */,
+				CC704A6A2544D30B006491F6 /* GoogleService-Info.plist */,
 				CCC2B3F02536AC8B00F6D500 /* Info.plist */,
 			);
 			path = LoveJudgement;
@@ -109,9 +139,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CCC2B3F32536AC8B00F6D500 /* Build configuration list for PBXNativeTarget "LoveJudgement" */;
 			buildPhases = (
+				4A5095AAEEAD3187A3013185 /* [CP] Check Pods Manifest.lock */,
 				CCC2B3DB2536AC8800F6D500 /* Sources */,
 				CCC2B3DC2536AC8800F6D500 /* Frameworks */,
 				CCC2B3DD2536AC8800F6D500 /* Resources */,
+				9771FCEDEAB06113BC61F566 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -162,6 +194,7 @@
 			files = (
 				CCC2B3EF2536AC8B00F6D500 /* LaunchScreen.storyboard in Resources */,
 				CCC2B3EC2536AC8B00F6D500 /* Assets.xcassets in Resources */,
+				CC704A6B2544D30B006491F6 /* GoogleService-Info.plist in Resources */,
 				CCC2B3EA2536AC8800F6D500 /* Main.storyboard in Resources */,
 				CC704A5C2540A225006491F6 /* test.png in Resources */,
 			);
@@ -169,12 +202,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4A5095AAEEAD3187A3013185 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LoveJudgement-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9771FCEDEAB06113BC61F566 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LoveJudgement/Pods-LoveJudgement-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LoveJudgement/Pods-LoveJudgement-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LoveJudgement/Pods-LoveJudgement-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CCC2B3DB2536AC8800F6D500 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				CC704A602540CAD4006491F6 /* PostViewController.swift in Sources */,
+				CC39B5F02544DC5B00362C5B /* SendDBModel.swift in Sources */,
 				CC704A5825409C38006491F6 /* PostsListViewController.swift in Sources */,
 				CCC2B3E72536AC8800F6D500 /* ViewController.swift in Sources */,
 				CCC2B3E32536AC8800F6D500 /* AppDelegate.swift in Sources */,
@@ -326,6 +402,7 @@
 		};
 		CCC2B3F42536AC8B00F6D500 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4E431BF2002A30B6F6E4077 /* Pods-LoveJudgement.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -344,6 +421,7 @@
 		};
 		CCC2B3F52536AC8B00F6D500 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D618C9DF01BD311A31C67E11 /* Pods-LoveJudgement.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

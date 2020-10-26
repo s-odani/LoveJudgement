@@ -8,8 +8,18 @@
 
 import UIKit
 import Photos
+import Firebase
+import FirebaseAuth
 
 class PostViewController: UIViewController, UITextFieldDelegate, UIPickerViewDelegate, UIPickerViewDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    
+    var userID = String()
+    var passImage = UIImage()
+    var userName = String()
+    var myAge = String()
+    var partnerAge = String()
+    var myGender = String()
+    var partnerGender = String()
 
     
     @IBOutlet weak var titleTextField: UITextField!
@@ -37,6 +47,17 @@ class PostViewController: UIViewController, UITextFieldDelegate, UIPickerViewDel
         relationTextField.delegate = self
         agePickerView.delegate = self
         agePickerView.dataSource = self
+        
+        if UserDefaults.standard.object(forKey: "userName") != nil {
+            userName = UserDefaults.standard.object(forKey: "userName") as! String
+        }
+        if UserDefaults.standard.object(forKey: "age") != nil {
+            myAge = UserDefaults.standard.object(forKey: "age") as! String
+        }
+        if UserDefaults.standard.object(forKey: "gender") != nil {
+            myGender = UserDefaults.standard.object(forKey: "gender") as! String
+        }
+        
     }
     
     
@@ -71,19 +92,24 @@ class PostViewController: UIViewController, UITextFieldDelegate, UIPickerViewDel
                     didSelectRow row: Int,
                     inComponent component: Int) {
         
-        // = dataList[row]
+        partnerAge = dataList[row]
         
     }
     
     
     //~~~~~~~~~~~~~~~~性別のセグメント関係~~~~~~~~~~~~~~~~~~^
     @IBAction func genderChanged(_ sender: Any) {
+        
+        
+        
         //セグメントが変更されたときの処理
-               //選択されているセグメントのインデックス
-               //let selectedIndex = segmentedControl.selectedSegmentIndex
-               //選択されたインデックスの文字列を取得してラベルに設定
-               //label.text = segmentedControl.titleForSegmentAtIndex(selectedIndex)
+        //選択されているセグメントのインデックス
+        let selectedIndex = genderSegmentedControl.selectedSegmentIndex
+        print(selectedIndex)
+        //選択されたインデックスの文字列を取得してラベルに設定
+        partnerGender = genderSegmentedControl.titleForSegment(at: selectedIndex)!
     }
+   
     
     
     //~~~~~~~~~~~~~~~~~トーク画像選択~~~~~~~~~~~~~~
@@ -156,6 +182,24 @@ class PostViewController: UIViewController, UITextFieldDelegate, UIPickerViewDel
         self.present(alertController, animated: true, completion: nil)
         
     }
-  
+    
+    
+    @IBAction func send(_ sender: Any) {
+        //送信
+        if titleTextField.text?.isEmpty == true ||
+        relationTextField.text?.isEmpty == true{
+            return
+        }
+        
+        let passData = talkImageView.image!.jpegData(compressionQuality: 0.01)
+        let sendDBModel = SendDBModel(userID: Auth.auth().currentUser!.uid, userName: userName, title: titleTextField.text!, myAge: myAge, partnerAge: partnerAge, myGender: myGender, partnerGender: partnerGender, relation: relationTextField.text!, talkImage: passData!)
+            
+            //userID: Auth.auth().currentUser!.uid, userName: userName, title: titleTextField.text!, relation: relationTextField.text!, talkImage: passData!)
+        sendDBModel.sendData(userID: Auth.auth().currentUser!.uid)
+        
+        //次の遷移画面へのコード
+        
+    }
+    
 
 }

@@ -15,5 +15,4 @@ target 'LoveJudgement' do
   pod 'SDWebImage', '~> 5.0'
   pod "ViewAnimator"
   pod 'ActiveLabel'
-
 end

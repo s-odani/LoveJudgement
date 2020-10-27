@@ -3,11 +3,10 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		68FD0997962C2E2F1A97E34A /* Pods_LoveJudgement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33B4ACC98CBDC1909F6BD386 /* Pods_LoveJudgement.framework */; };
 		CC39B5F02544DC5B00362C5B /* SendDBModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC39B5EF2544DC5B00362C5B /* SendDBModel.swift */; };
 		CC704A5825409C38006491F6 /* PostsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC704A5725409C38006491F6 /* PostsListViewController.swift */; };
 		CC704A5A25409EE9006491F6 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC704A5925409EE9006491F6 /* DetailViewController.swift */; };
@@ -25,10 +24,13 @@
 		CCC2B3EA2536AC8800F6D500 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCC2B3E82536AC8800F6D500 /* Main.storyboard */; };
 		CCC2B3EC2536AC8B00F6D500 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCC2B3EB2536AC8B00F6D500 /* Assets.xcassets */; };
 		CCC2B3EF2536AC8B00F6D500 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCC2B3ED2536AC8B00F6D500 /* LaunchScreen.storyboard */; };
+		DFAAA34B2CB23CC8C5C5BC72 /* Pods_LoveJudgement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6BAC4CF3380DAF6FA61CDBB /* Pods_LoveJudgement.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		33B4ACC98CBDC1909F6BD386 /* Pods_LoveJudgement.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoveJudgement.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		76898F11344FEE5BBA3F7835 /* Pods-LoveJudgement.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoveJudgement.release.xcconfig"; path = "Target Support Files/Pods-LoveJudgement/Pods-LoveJudgement.release.xcconfig"; sourceTree = "<group>"; };
+		A974E83C1794E5A513A31111 /* Pods-LoveJudgement.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoveJudgement.debug.xcconfig"; path = "Target Support Files/Pods-LoveJudgement/Pods-LoveJudgement.debug.xcconfig"; sourceTree = "<group>"; };
+		B6BAC4CF3380DAF6FA61CDBB /* Pods_LoveJudgement.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoveJudgement.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC39B5EF2544DC5B00362C5B /* SendDBModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendDBModel.swift; sourceTree = "<group>"; };
 		CC704A5725409C38006491F6 /* PostsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsListViewController.swift; sourceTree = "<group>"; };
 		CC704A5925409EE9006491F6 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
@@ -48,8 +50,6 @@
 		CCC2B3EB2536AC8B00F6D500 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CCC2B3EE2536AC8B00F6D500 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CCC2B3F02536AC8B00F6D500 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D4E431BF2002A30B6F6E4077 /* Pods-LoveJudgement.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoveJudgement.debug.xcconfig"; path = "Target Support Files/Pods-LoveJudgement/Pods-LoveJudgement.debug.xcconfig"; sourceTree = "<group>"; };
-		D618C9DF01BD311A31C67E11 /* Pods-LoveJudgement.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoveJudgement.release.xcconfig"; path = "Target Support Files/Pods-LoveJudgement/Pods-LoveJudgement.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68FD0997962C2E2F1A97E34A /* Pods_LoveJudgement.framework in Frameworks */,
+				DFAAA34B2CB23CC8C5C5BC72 /* Pods_LoveJudgement.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,17 +67,18 @@
 		0A91773CC47257688DB2C88D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				33B4ACC98CBDC1909F6BD386 /* Pods_LoveJudgement.framework */,
+				B6BAC4CF3380DAF6FA61CDBB /* Pods_LoveJudgement.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		76D52DD7344ED2D7BB3DCFF2 /* Pods */ = {
+		964AFEFD5441ACEE0CB16941 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				D4E431BF2002A30B6F6E4077 /* Pods-LoveJudgement.debug.xcconfig */,
-				D618C9DF01BD311A31C67E11 /* Pods-LoveJudgement.release.xcconfig */,
+				A974E83C1794E5A513A31111 /* Pods-LoveJudgement.debug.xcconfig */,
+				76898F11344FEE5BBA3F7835 /* Pods-LoveJudgement.release.xcconfig */,
 			);
+			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -94,8 +95,8 @@
 			children = (
 				CCC2B3E12536AC8800F6D500 /* LoveJudgement */,
 				CCC2B3E02536AC8800F6D500 /* Products */,
-				76D52DD7344ED2D7BB3DCFF2 /* Pods */,
 				0A91773CC47257688DB2C88D /* Frameworks */,
+				964AFEFD5441ACEE0CB16941 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -139,11 +140,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CCC2B3F32536AC8B00F6D500 /* Build configuration list for PBXNativeTarget "LoveJudgement" */;
 			buildPhases = (
-				4A5095AAEEAD3187A3013185 /* [CP] Check Pods Manifest.lock */,
+				79FEEF996013327AB0B96F15 /* [CP] Check Pods Manifest.lock */,
 				CCC2B3DB2536AC8800F6D500 /* Sources */,
 				CCC2B3DC2536AC8800F6D500 /* Frameworks */,
 				CCC2B3DD2536AC8800F6D500 /* Resources */,
-				9771FCEDEAB06113BC61F566 /* [CP] Embed Pods Frameworks */,
+				178825E21474B537E371E0D5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -161,7 +162,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1130;
-				LastUpgradeCheck = 1130;
+				LastUpgradeCheck = 1210;
 				ORGANIZATIONNAME = ShunsukeOdani;
 				TargetAttributes = {
 					CCC2B3DE2536AC8800F6D500 = {
@@ -203,7 +204,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		4A5095AAEEAD3187A3013185 /* [CP] Check Pods Manifest.lock */ = {
+		178825E21474B537E371E0D5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LoveJudgement/Pods-LoveJudgement-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LoveJudgement/Pods-LoveJudgement-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LoveJudgement/Pods-LoveJudgement-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		79FEEF996013327AB0B96F15 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -223,23 +241,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9771FCEDEAB06113BC61F566 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-LoveJudgement/Pods-LoveJudgement-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-LoveJudgement/Pods-LoveJudgement-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LoveJudgement/Pods-LoveJudgement-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -312,6 +313,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -336,7 +338,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -372,6 +374,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -390,7 +393,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -402,12 +405,13 @@
 		};
 		CCC2B3F42536AC8B00F6D500 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D4E431BF2002A30B6F6E4077 /* Pods-LoveJudgement.debug.xcconfig */;
+			baseConfigurationReference = A974E83C1794E5A513A31111 /* Pods-LoveJudgement.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y7R99AZ9GB;
 				INFOPLIST_FILE = LoveJudgement/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -421,12 +425,13 @@
 		};
 		CCC2B3F52536AC8B00F6D500 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D618C9DF01BD311A31C67E11 /* Pods-LoveJudgement.release.xcconfig */;
+			baseConfigurationReference = 76898F11344FEE5BBA3F7835 /* Pods-LoveJudgement.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y7R99AZ9GB;
 				INFOPLIST_FILE = LoveJudgement/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

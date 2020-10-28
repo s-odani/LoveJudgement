@@ -22,6 +22,11 @@ class PostsListViewController: UIViewController {
     }
     
 
+    @IBAction func tap(_ sender: Any) {
+        
+        let detailVC = storyboard?.instantiateViewController(withIdentifier: "detail") as! DetailViewController
+        navigationController?.pushViewController(detailVC, animated: true)
+    }
     /*@IBAction func detail(_ sender: Any) {
         let detailVC = storyboard?.instantiateViewController(withIdentifier: "detail") as! DetailViewController
         navigationController?.pushViewController(detailVC, animated: true)

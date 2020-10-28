@@ -27,7 +27,7 @@ class RegisterViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     
     @IBOutlet weak var genderSegmentedControl: UISegmentedControl!
     
-    let dataList = ["11歳","12歳","13歳","14歳","15歳","16歳","17歳","18歳","19歳","20歳","21歳","22歳","23歳","24歳","25歳","26歳","27歳","28歳","29歳","30歳","31歳","32歳","33歳","34歳","35歳","36歳","37歳","38歳","39歳","40歳"]
+    let dataList = ["10歳","11歳","12歳","13歳","14歳","15歳","16歳","17歳","18歳","19歳","20歳","21歳","22歳","23歳","24歳","25歳","26歳","27歳","28歳","29歳","30歳","31歳","32歳","33歳","34歳","35歳","36歳","37歳","38歳","39歳","40歳"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
